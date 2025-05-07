@@ -1,69 +1,69 @@
-# 📋 Gerenciador de Tarefas (To-do List CLI)
+# 📋 Task Manager (To-do List CLI)
 
-Um projeto simples em Python que simula um sistema de tarefas com funcionalidades de **CRUD** utilizando um arquivo `JSON` como banco de dados.
-
----
-
-## 🧠 Funcionalidades
-
-- ✅ Adicionar nova tarefa
-- 📄 Listar todas as tarefas
-- ✅ Marcar tarefa como concluída
-- ❌ Excluir tarefa por ID
-- 🔍 Buscar tarefas por status (`pending` ou `completed`)
+A simple Python project that simulates a task system with **CRUD** functionalities using a `JSON` file as the database.
 
 ---
 
-## 🗃️ Estrutura do Projeto
+## 🧠 Features
+
+- ✅ Add a new task  
+- 📄 List all tasks  
+- ✅ Mark task as completed  
+- ❌ Delete task by ID  
+- 🔍 Search tasks by status (`pending` or `completed`)
+
+---
+
+## 🗃️ Project Structure
 
 ```
 todolist/
-├── main.py         # Contém toda a lógica das funções
-├── data.json       # Arquivo usado como "banco de dados"
-└── README.md       # Este arquivo
+├── main.py         # Contains all the function logic
+├── data.json       # File used as a "database"
+└── README.md       # This file
 ```
 
 ---
 
-## 💻 Como usar
+## 💻 How to Use
 
-1. **Clone o repositório** ou copie os arquivos.
-2. Execute o arquivo `main.py`:
+1. **Clone the repository** or copy the files.  
+2. Run the `main.py` file:  
    ```bash
    python main.py
-   ```
-3. Interaja com o menu no terminal.
+   ```  
+3. Interact with the menu in the terminal.
 
 ---
 
-## 🛠 Exemplo de uso das funções
+## 🛠 Example Usage
 
 ```python
-add_task("Estudar Python")
-add_task("Fazer exercícios")
+add_task("Study Python")
+add_task("Do exercises")
 
 list_tasks()
-# [1] Estudar Python - pending
-# [2] Fazer exercícios - pending
+# [1] Study Python - pending
+# [2] Do exercises - pending
 
 complete_task(1)
 
 get_by_status("completed")
-# [1] Estudar Python - completed
+# [1] Study Python - completed
 
 delete_task(2)
 ```
 
 ---
 
-## 📌 Observações
+## 📌 Notes
 
-- Os dados são salvos no arquivo `data.json`. Ele é criado automaticamente se não existir.
-- As tarefas têm IDs automáticos e únicos.
-- O projeto pode ser expandido com novas funcionalidades (como editar tarefas, datas, prioridades etc).
+- Data is saved in the `data.json` file. It is automatically created if it doesn't exist.
+- Tasks have unique and auto-generated IDs.
+- The project can be expanded with new features (such as editing tasks, adding dates, priorities, etc).
 
 ---
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Este projeto é para fins de estudo. Sinta-se à vontade para adaptar e melhorar!# To-do-List-CLI
+This project is for educational purposes. Feel free to adapt and improve it!
